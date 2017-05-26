@@ -1,5 +1,5 @@
 {
-  "name": "DesignBot",
+  "name": "color-palette-generator",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -16,8 +16,7 @@
     "redux-thunk": "^2.1.0",
     "reselect": "^2.5.4",
     "styled-components": "^1.4.3",
-    "tinycolor2": "^1.4.1",
-    "toastr": "^2.1.2"
+    "tinycolor2": "^1.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
