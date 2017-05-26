@@ -9,7 +9,7 @@ export function setPalette(palette) {
 
 export function setColor(color, index) {
   return {
-    type: types.CREATE_TASK_ERROR,
-    payload: { color, index }
+    type: types.SET_COLOR,
+    payload: { color, index },
   };
 }

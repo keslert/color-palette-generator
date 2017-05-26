@@ -2,7 +2,7 @@ import * as types from './action-types';
 import { filter } from 'lodash';
 
 const uiState = () => ({
-  palette: ['#c09cf6','#ed9cf6','#f69cd2','#f69ca5','#f6c09c'],
+  palette: ['#169E7D','#4BAE95','#81BEAD','#B6CDC4','#EBDDDC'],
 });
 
 export function uiReducer(state = uiState(), {payload, type}) {
