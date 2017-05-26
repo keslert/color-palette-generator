@@ -35,13 +35,15 @@ class Palette extends React.PureComponent {
 
   updatePalette() {
     const { setPalette } = this.props;
-    const base = tinycolor.random();
+    const color1 = tinycolor.random();
+    const color2 = tinycolor.random();
+
     const palette = [
-      base.toHexString(),
-      base.spin(30).toHexString(),
-      base.spin(30).toHexString(),
-      base.spin(30).toHexString(),
-      base.spin(30).toHexString(),
+      color1.toHexString(),
+      tinycolor.mix(color1, color2, 25).toHexString(),
+      tinycolor.mix(color1, color2, 50).toHexString(),
+      tinycolor.mix(color1, color2, 75).toHexString(),
+      color2.toHexString(),
     ]
     setPalette(palette);
   }
